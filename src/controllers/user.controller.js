@@ -1,8 +1,8 @@
 import { asyncHandler } from "../utils/asynchandler.js";
 import { ApiError } from "../utils/Apierror.js";
-import User from "../models/user.model.js";
+import {User} from "../models/user.model.js";
 import { uploadOnCloudinary } from "../utils/cloudinary.js";
-import { ApiResponse } from "../utils/ApiResponse";
+import { ApiResponse } from "../utils/ApiResponse.js";
 
 const registerUser = asyncHandler(async (req, res) => {
   // step 1 -> check wheather all the fields are populted or not
